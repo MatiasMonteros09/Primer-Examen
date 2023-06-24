@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies-Filter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Quicksand&family=Raleway:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="text-hero">
+            <h1>Welcome to my website</h1>
+            <p>The best website for you</p>
+            <a href="#contacto">Constact Us</a>
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 315.18,-52.95 500.00,49.98 L500.00,150.00 L-4.22,159.20 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <section class="wave-container website">
+        <img src="/img/concepto-programacion-desarrollo-software-desarrollador-hombre-optimiza-codigo-programa-computadora-programador-trabaja-escena-personaje-oficina-ilustracion-vector-diseno-plano-.avif"
+            alt="imagen principal">
+        <div class="container">
+            <h2 class="title-left">The best movie search engine</h2>
+            <p class="paragraph">Here you will find the best movies of all years rated by our users</p>
+            <a href="" class="cta">See more</a>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <h2 class="title-left">Together we can grow</h2>
+            <p>Register and you can join and rate our movies</p>
+        </div>
+    </section>
+    <div class="container-re">
+        <h3>Movies Filter</h3>
+        <div class="filters">
+            <label for="userId">User ID:</label>
+            <input type="number" id="userId" min="1">
+
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate">
+
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate">
+
+            <label for="rate">Minimum Rate:</label>
+            <input type="number" id="rate" min="0" max="10" step="0.1">
+
+            <button id="filterBtn">Filter</button>
+        </div>
+        <div id="moviesList"></div>
+    </div>
+    <footer id="contacto">
+        <div class="container">
+            <h2 class="title">Contact Us</h2>
+            <form action="" class="form">
+                <input class="input" type="text" name="nombre" placeholder="Nombre">
+                <input class="input" type="email" name="correo electronico" placeholder="Email">
+                <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Escribe un Mensaje:"></textarea>
+                <input class="input" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+    <script src="script/movies-filter.js"></script>
+</body>
+
+</html>
